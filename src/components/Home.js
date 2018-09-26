@@ -11,7 +11,7 @@ class Home extends Component {
         <h3 className='center-text'>Welcome to Life Events.</h3>
         <p>This is a platform where you can store your most significant life events. Like going on a skiing trip.</p>
         <div id='homeContainer'>
-          <img alt='img' id='snowMoon' src={snowMoon}></img>  
+          <img class="card-img-top" alt='img' id='snowMoon' src={snowMoon}></img>  
         </div>
         
         <p>To start, click the Add Event link above.</p>
