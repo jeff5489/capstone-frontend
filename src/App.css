@@ -1,44 +1,3 @@
-/* header, footer {
-}
-#title {
-  text-align: center;
-}
-.border {
-  border: 1px solid;
-}
-main {
-}
-body {
-  background-color: #DBDFE8;
-
-}
-#formComponent, #readComponent {
-  max-width: 80%;
-  margin: auto;
-}
-
-.whiteBackground {
-  background-color: white;
-}
-ul {
-  list-style-type: none;
-  text-align: center;
-}
-li {
-  display: inline;
-  margin-right: 20px;
-  margin-left: 20px;
-  text-align: center;
-  text-decoration: none;
-}
-.headerFont {
-  font-family: garamond;
-}
-p {
-  font-family: trebuchet;
-} */
-
-
 .center-text {
   text-align: center;
 }
@@ -53,14 +12,9 @@ p {
   display: flex;
   justify-content: center;
 }
-
-
 #snowMoon {
   max-width: 720px;
   max-height: 400px;
-
-  /* max-width: auto; */
-  /* max-height: 300px; */
 }
 #photo{
   max-width: auto;

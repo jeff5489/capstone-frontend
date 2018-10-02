@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-// import '../App.css';
-
 class Delete extends Component { 
   constructor(props){
     super();
@@ -28,7 +26,6 @@ class Delete extends Component {
       headers:{
         "content-type":"application/json; charset=UTF-8"
       },
-      // body:JSON.stringify(this.state),
       method:"DELETE"
     }
     fetch(url, otherPram)
@@ -36,7 +33,6 @@ class Delete extends Component {
     .then(res=>{this.props.pullFromAPI()})
     .catch(error=>console.log(error))
   }  
-
 
   render() {
     return (
@@ -46,14 +42,11 @@ class Delete extends Component {
           <form onSubmit={this.handleSubmit}>
             Id Number: <br/>
             <input class="form-control form-control-lg" type="text" name="id" onChange={this.handleChange} placeholder="" id="inputLarge"/><br/>
-            {/* <input type="text" name="id" onChange={this.handleChange} /> <br/><br/> */}
             <div className='formContainer'>
               <input type='submit'className='btn btn-primary'/>
             </div><br/>
-            
         </form>
         </div>
-        
       </div>
     );
   }

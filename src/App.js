@@ -23,7 +23,6 @@ componentDidMount() {
 }
 
 pullFromAPI = () => {
-    // return fetch('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1')
     return fetch('http://localhost:8080/rest/users/all')
 
     .then(response => response.json())
@@ -48,7 +47,6 @@ stuff(){
           
             <div id='formComponent'>
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            {/* <a class="navbar-brand" href="#">Navbar</a> */}
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -71,31 +69,8 @@ stuff(){
                   <a class="nav-link" href="#"><Link to="/delete">Delete Event</Link></a>
                 </li>
               </ul>
-              {/* <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search"/>
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-              </form> */}
             </div>
           </nav>
-
-
-              {/* <ul>
-                <li>
-                  <Link to="/home">Home</Link>
-                </li>
-                <li>
-                  <Link to="/read">View</Link>
-                </li>
-                <li>
-                  <Link to="/add">Add Event</Link>
-                </li>
-                <li>
-                  <Link to="/update">Edit Event</Link>
-                </li>
-                <li>
-                  <Link to="/delete">Delete Event</Link>
-                </li>
-              </ul> */}
 
               <hr />
               <Route path="/home" component={Home} />
@@ -106,7 +81,6 @@ stuff(){
             </div>
           </Router>
         </main>  
-        {/* <Footer /> */}
       </div>
     );
   }

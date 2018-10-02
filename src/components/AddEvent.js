@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-// import '../App.css';
-
 class AddEvent extends Component { 
   constructor(props){
     super();
@@ -48,22 +46,16 @@ class AddEvent extends Component {
         <div className='formContainer'>
 
         <div class="form-group">
-          {/* <label class="col-form-label col-form-label-lg" for="inputLarge">Large input</label> */}
-          {/* <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="inputLarge"/> */}
         </div>
           <form onSubmit={this.handleSubmit}>
               Title: <br/>
               <input class="form-control form-control-lg" type="text"name="title" onChange={this.handleChange} placeholder="" id="inputLarge"/><br/>
-              {/* <input type="text" name="title" onChange={this.handleChange}/> <br/> */}
               Date: <br/>
               <input class="form-control form-control-lg" type="date" name="date" onChange={this.handleChange} placeholder="" id="inputLarge"/><br/>
-              {/* <input type="date" name="date" onChange={this.handleChange}/> <br/> */}
               Image URL: <br/>
               <input class="form-control form-control-lg" type="text" name="imgUrl" onChange={this.handleChange} placeholder="" id="inputLarge"/><br/>
-              {/* <input type="text" name="imgUrl" onChange={this.handleChange}/> <br/> */}
               Event Summary:<br/>
               <textarea class="form-control form-control-lg" type="text" name="description" onChange={this.handleChange} placeholder="" id="inputLarge"/><br/>
-              {/* <textarea type="text" name="description" onChange={this.handleChange} /><br/><br/> */}
               <div className='formContainer'>
                 <input type='submit'className='btn btn-primary'/>
               </div><br/>
