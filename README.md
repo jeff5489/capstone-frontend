@@ -1054,11 +1054,7 @@ For example, a production setup might look like this after the app is deployed:
 /api/todos    - server handles any /api/* requests using the backend implementation
 ```
 
-Such setup is **not** required. However, if you **do** have a setup like this, it is convenient to write requests like `fetch('/api/todos')` without worrying about redirecting them to another host or port during development.
-
-To tell the development server to proxy any unknown requests to your API server in development, add a `proxy` field to your `package.json`, for example:
-
-```js
+Such setup is **not** required. However, if you **do** have a setup l
   "proxy": "http://localhost:4000",
 ```
 
